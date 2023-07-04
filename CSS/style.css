@@ -1,0 +1,429 @@
+/* http://meyerweb.com/eric/tools/css/button/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* HTML5 display-role button for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.wrapper{
+    width:100%;
+}
+.top-header{
+    background-color: black;
+    padding: 10px 20px;
+}
+.top-header a{
+    color: white;
+    font-size: 22px;
+    line-height: 26px;
+    text-decoration: none;
+}
+.main{
+    max-width: 1200px;
+    margin:0 auto;
+}
+table{
+    width:100%;
+}
+table tr th{
+    font-weight: bold;
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+/* table tr th:nth-child(1){
+width:10%
+}
+table tr th:nth-child(2){
+    width: 25%;
+}
+table tr th:nth-child(3){
+    width: 15%;
+}
+table tr th:nth-child(4){
+    width: 25%;
+}
+table tr th:nth-child(5){
+    width: 25%;
+} */
+
+table tr td{
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    
+}
+table tr:nth-child(2n+1) td{
+background-color:#fafafa;
+}
+.controls{
+   
+    text-align: right;
+}
+.controls button{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-right: 2px;
+    border: 1px solid gray;
+    padding: 8px;
+border-radius: 6px;
+background-color: white;
+}
+.edit{
+    border: 1px solid gray;
+    padding: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+width:60px;
+border-radius: 6px;
+background-color: blue;
+margin-right:10px;
+min-width:20px;
+color: white;
+}
+.delete{
+    border: 1px solid gray;
+    padding: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+border-radius: 6px;
+width: 60px;
+background-color: red;
+color:white
+}
+
+.box-outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.bg{
+    background: rgb(34,195,192);
+background: linear-gradient(90deg, rgba(34,195,192,0.9430147058823529) 0%, rgba(188,9,255,0.861782212885154) 100%);
+}
+.box{
+    width: 325px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    padding-top: 30px;
+}
+
+.box h1{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bolder;
+    text-align: center;
+}
+.box form label{
+    display: block;
+}
+.email{
+    margin-bottom: 20px;
+    margin-top: 25px;
+    font-weight: semi;
+    color: rgb(0,0,0,0.75);
+}
+.password{
+    margin-bottom: 8px;
+    font-weight:lighter;
+    color: rgb(0,0,0,0.75);
+}
+.email input{
+    width:100%;
+    height: 35px;
+    margin-top: 4PX;
+    border:1px solid rgb(0,0,0,0.25);
+    box-sizing: border-box;
+
+}
+.password input{
+    width: 100%;
+    height: 35px;
+    margin-top: 4PX;
+    border:1px solid rgb(0,0,0,0.25);
+    box-sizing: border-box;
+}
+.forgot-password a{
+    text-decoration: none;
+    color: rgb(135, 207, 235);
+}
+.login-button{
+    margin-top: 25px;
+}
+.login-button button{
+    width:100%;
+    height: 35px;
+    font-weight: bold;
+    color: #ffffff;
+    background: rgb(34,195,191);
+background: linear-gradient(90deg, rgba(34,195,191,0.9430147058823529) 6%, rgba(170,9,255,0.8911939775910365) 69%);
+border-width:0px
+}
+.signup{
+    margin-top: 25px;
+    text-align: center;
+    text-decoration: none;
+}
+.signup a{
+    text-decoration: none;
+    color: skyblue;
+}
+img{
+    border:5px solid red;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+.c-header{
+margin-bottom: 40px;
+}
+ .c-header .main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgb(162, 130, 238);
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 25px;
+    box-sizing: border-box;
+    align-items: center;
+    font-size: 1.3rem;
+max-width: 100%;
+}
+.main a{
+    text-decoration: none;
+    color: white;
+}
+.main button{
+    width: 125px;
+    height: 40px;
+    white-space: nowrap;
+    border: 1px solid gray;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+.icon img{
+    width: 20px;
+    border: 0px;
+}
+.name-info{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.circle-1{
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    background-color: pink;
+    color: white;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+.circle-2{
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    background-color: green;
+    color: white;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+.circle-3{
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    background-color: skyblue;
+    color: white;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+.circle-4{
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    background-color: yellow;
+    color: white;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+.circle-5{
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    background-color: violet;
+    color: white;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+.circle-6{
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+.circle-7{
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    background-color: pink;
+    color: white;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+.list{
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.list tr th:nth-child(1){
+    width: 5%;
+}
+.list tr th:nth-child(2){
+    width: 30%;
+}
+.list tr th:nth-child(3){
+    width: 20%;
+}
+.list tr th:nth-child(4){
+    width: 35%;
+}
+.list tr th:nth-child(5){
+    width: 10%;
+}
+.list table tr td{
+    font-size:14px;
+    font-weight: normal;
+}
+.icon img{ 
+margin-right: 5px;
+}
+.edit-box{
+    width:400px;
+    margin: 0 auto;
+    background-color:white;
+
+    padding: 20px;
+    
+}
+.edit-box h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 20px;
+    padding-top: 0px;
+}
+label{
+    display: block;
+    text-align: left;
+    padding: 5px;
+    padding-left: 0px;
+}
+.edit-box input{
+    width: 100%;
+    box-sizing: border-box;
+    height: 35px;
+    padding-left: 12px;
+}
+.editcontact{
+    margin: 15px;
+    text-align: center;
+    margin-right: 0px;
+    margin-left:0px ;
+}
+.editcontact button{
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0px;
+    height: 35px;
+    background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(212,212,212,1) 1%, rgba(9,142,255,0.8911939775910365) 100%);
+color:#ffffff;
+border: 0px;
+}
+.clr{
+    background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(212,212,212,1) 1%, rgba(9,142,255,0.8911939775910365) 100%);
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
